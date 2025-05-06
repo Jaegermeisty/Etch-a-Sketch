@@ -34,8 +34,8 @@ createGrid(16);
 
 button.addEventListener('click', () => {
   newDimension = prompt('Select your new dimesions (max 100).')
-  if (newDimension < 0 || newDimension > 100 || isNaN(newDimension)) {
-    alert('Select a number between 0-99.');
+  if (newDimension <= 0 || newDimension > 100 || isNaN(newDimension)) {
+    alert('Select a number between 1-100.');
     return;
   }
   createGrid(newDimension);
