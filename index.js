@@ -1,5 +1,10 @@
 const mainContainer = document.querySelector('.main-container')
 const button = document.querySelector('.btn');
+const clearBtn = document.querySelector('.clear-btn');
+
+clearBtn.addEventListener('click', () => {
+  mainContainer.innerHTML = '';
+});
 
 function createGrid(dimension) {
   mainContainer.innerHTML = '';
@@ -24,8 +29,6 @@ function createGrid(dimension) {
 createGrid(16);
 
 const squares = document.querySelectorAll('.square');
-
-
 
 button.addEventListener('click', () => {
   newDimension = prompt('Select your new dimesions (max 100).')
