@@ -28,8 +28,6 @@ function createGrid(dimension) {
 
 createGrid(16);
 
-const squares = document.querySelectorAll('.square');
-
 button.addEventListener('click', () => {
   newDimension = prompt('Select your new dimesions (max 100).')
   if (newDimension < 0 || newDimension > 100 || isNaN(newDimension)) {
