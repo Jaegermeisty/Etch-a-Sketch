@@ -3,7 +3,11 @@ const button = document.querySelector('.btn');
 const clearBtn = document.querySelector('.clear-btn');
 
 clearBtn.addEventListener('click', () => {
-  mainContainer.innerHTML = '';
+  const squares = document.querySelectorAll('.square');
+
+  squares.forEach(square => {
+    square.style.backgroundColor = 'white';
+  })
 });
 
 function createGrid(dimension) {
