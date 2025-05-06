@@ -14,7 +14,7 @@ function createGrid(dimension) {
 
 
     square.addEventListener('mouseover', () => {
-    square.classList.add('green');
+    square.style.backgroundColor = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0");
     })
 
     mainContainer.appendChild(square);
