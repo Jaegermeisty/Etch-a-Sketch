@@ -6,3 +6,13 @@ const mainContainer = document.querySelector('.main-container')
   square.classList.add('square');
   mainContainer.appendChild(square);
   }
+
+  const squares = document.querySelectorAll('.square');
+
+  squares.forEach(square => {
+    square.addEventListener('mouseover', () => {
+    square.classList.add('green');
+  })
+  });
+
+  
